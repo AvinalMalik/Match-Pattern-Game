@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Sequence Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="menuButton">Menu</div>
+    <div id="gameContainer">
+        <div id="menuButton">Menu</div>
+        <div id="modeButtonsContainer">
+        <div id="modeButtonsContainer">
+            <button id="classicModeButton" class="modeButton">Classic Mode</button>
+            <button id="timedModeButton" class="modeButton">Timed Mode</button>
+        </div>
+        <select id="timeSelect" style="display: none;">
+            <option value="30">30 seconds</option>
+            <option value="60" selected>60 seconds</option>
+            <option value="90">90 seconds</option>
+            <option value="120">120 seconds</option>
+        </select>
+        <button id="startButton" style="display: none;">Start Game</button>
+        <div id="timerDisplay" style="display: none;"></div>
+        <div id="colorButtons" style="display: none;">
+            <button class="colorButton" id="red"></button>
+            <button class="colorButton" id="green"></button>
+            <button class="colorButton" id="blue"></button>
+            <button class="colorButton" id="yellow"></button>
+        </div>
+        <p id="gameStatus"></p>
+        <div id="highestScoresContainer">
+            <h3>Highest Scores</h3>
+            <ul id="highestScoresList"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+#gameContainer {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center elements within the container */
+}
+
+.colorButton {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border: 2px solid #ddd; /* Subtle border for buttons */
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#red { background-color: red; }
+#green { background-color: green; }
+#blue { background-color: blue; }
+#yellow { background-color: yellow; }
+
+.colorButton:active {
+    opacity: 0.8;
+    transform: scale(0.9);
+}
+
+.colorButton:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Enhanced hover effect */
+}
+
+#highestScoresContainer {
+    background-color: #f8f8f8;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Position below the game */
+    display: inline-block; /* Align to center */
+    width: 100%; /* Take full width */
+}
+
+#highestScoresContainer h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+#highestScoresList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#timerDisplay {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .colorButton {
+        width: 80px;
+        height: 80px;
+    }
+    #gameContainer {
+        width: 90%;
+    }
+}
+
+#menuButton {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Existing styles... */
+
+#timeSelect, #startButton {
+    display: block; /* Make elements block to occupy full width */
+    margin: 10px auto; /* Center align and add margin */
+    padding: 10px 20px; /* Padding for better touch area */
+    font-size: 16px; /* Font size */
+    border: 2px solid #333; /* Border for definition */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f8f8; /* Light background */
+    cursor: pointer; /* Cursor change for interactivity */
+    transition: background-color 0.3s ease;
+}
+
+#timeSelect:hover, #startButton:hover {
+    background-color: #ddd; /* Color change on hover */
+}
+
+#menuButton:hover {
+    background-color: #ddd;
+}
